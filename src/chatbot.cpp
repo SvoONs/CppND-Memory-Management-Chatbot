@@ -44,6 +44,33 @@ ChatBot::~ChatBot()
 
 //// STUDENT CODE
 ////
+ChatBot::ChatBot(const ChatBot &source) {
+    std::cout << "ChatBot Copy Constructor" << std::endl;
+    // TODO
+}
+
+ChatBot &ChatBot::operator=(const ChatBot &source) {
+    std::cout << "ChatBot Copy Assignment Operator" << std::endl;
+    if (this==&source) {
+        return *this;
+    }
+    // TODO
+    return *this;
+}
+
+ChatBot::ChatBot(const ChatBot &&source) {
+    std::cout << "ChatBot Move Constructor" << std::endl;
+    // TODO
+}
+
+ChatBot &ChatBot::operator=(const ChatBot &&source) {
+    std::cout << "ChatBot Move Assignment Operator" << std::endl;
+    if (this==&source) {
+        return *this;
+    }
+    // TODO
+    return *this;
+}
 
 ////
 //// EOF STUDENT CODE
